@@ -5,10 +5,10 @@ import TopHeader from "./TopHeader/TopHeader";
 
 const Header = () => {
   return (
-    <header className="px-14">
-      <TopHeader/>
-      <hr />
-      <BottomHeader/>
+    <header className="max-w-[1600px] mx-auto md:px-14 px-5 dark:bg-[#0b0c1b]">
+      <TopHeader />
+      <div className="border-b border-b-[#ffffff1a] " />
+      <BottomHeader />
     </header>
   );
 };
