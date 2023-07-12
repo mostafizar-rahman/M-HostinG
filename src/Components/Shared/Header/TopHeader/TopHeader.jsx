@@ -38,7 +38,7 @@ const TopHeader = () => {
           <Link className="w-[130px] h-[42px] rounded-full md:flex justify-center items-center hidden bg-[#0060FE] hover:bg-[#004ac2] duration-700 text-white">
             FREE TRIAL
           </Link>
-          <Link className="w-[110px] h-[42px] rounded-full md:flex justify-center items-center hidden border border-[#4d4e5b] dark:bg-[#1a1b2e] hover:border-slate-200/70 duration-700 dark:text-white">
+          <Link to={"/login"} className="w-[110px] h-[42px] rounded-full md:flex justify-center items-center hidden border border-[#4d4e5b] dark:bg-[#1a1b2e] hover:border-slate-200/70 duration-700 dark:text-white">
             Login
           </Link>
           {/* ----------  */}
@@ -82,7 +82,7 @@ const TopHeader = () => {
             <Link className="dark:text-slate-100/80 font-medium text-[15px]"></Link>
           </li>
           <li className="px-5 py-[10px]">
-            <Link className="dark:text-slate-100/80 font-medium text-[15px]">
+            <Link className="dark:text-slate-100/80 font-medium text-[15px]" >
               Login
             </Link>
           </li>

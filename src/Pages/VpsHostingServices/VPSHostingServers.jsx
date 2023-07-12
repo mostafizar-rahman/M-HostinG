@@ -7,6 +7,7 @@ import VPSHostingServiceCard from "../../Components/VPSHostingServiceCard/VPSHos
 import Title from "../../Components/Title/Title";
 import BannerTwo from "../../Components/BannerTwo/BannerTwo";
 import Faqs from "../../Components/Shared/Faqs/Faqs";
+import HostingFeature from "../../Components/Shared/HostingFeature/HostingFeature";
 
 const VPSHostingServers = () => {
   const [managedPlan, setManagedPlan] = useState(true);
@@ -58,7 +59,7 @@ const VPSHostingServers = () => {
             </button>
           </div>
 
-          <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-5 mt-10">
+          <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-5 mt-10 mb-[30px]">
             {filteringVPSData.map(({ id, title, subTitle, hostingInfo }) => (
               <VPSHostingServiceCard
                 key={id}
@@ -68,6 +69,7 @@ const VPSHostingServers = () => {
               />
             ))}
           </div>
+          <HostingFeature />
         </div>
       </section>
       {/* ------------------VPS Hosting plans End */}

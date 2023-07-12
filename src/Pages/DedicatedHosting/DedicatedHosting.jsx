@@ -4,9 +4,19 @@ import herobg from "../../assets/images/hero-03.svg";
 import Title from "../../Components/Title/Title";
 import { dedicatedHostingData } from "../../Utlit/dedicatedHostingData";
 import DedicatedHostingCard from "../../Components/DedicatedHostingCard/DedicatedHostingCard";
+import SupportServices from "../../Components/SupportServices/SupportServices";
+import { supportServicesCategory } from "../../Utlit/supportServiceData";
+import SupportServiceTable from "../../Components/SupportServices/SupportServiceTable";
+import SupportServiceCard from "../../Components/SupportServices/SupportServiceCard";
+import Faqs from "../../Components/Shared/Faqs/Faqs";
+import Footer from "../../Components/Shared/Footer/Footer";
 
 const DedicatedHosting = () => {
   const [serverPlans, setServerPlans] = useState(true);
+  const [id, setId] = useState(1);
+  const handleId = (categoryId) => {
+    setId(categoryId);
+  };
   return (
     <>
       {/* --------------------Banner start */}
@@ -29,6 +39,7 @@ const DedicatedHosting = () => {
             main={"Dedicated Server Hosting plans and pricing:"}
             sub={"WHAT ABOUT OUR PLANS"}
           />
+          {/* ----------- Buttons */}
           <div className="flex  justify-center space-x-5">
             <button
               onClick={() => setServerPlans(true)}
@@ -47,7 +58,7 @@ const DedicatedHosting = () => {
               Fully Managed
             </button>
           </div>
-          <div className="mt-11">
+          <div className="mt-11 lg:block grid md:grid-cols-2 grid-cols-1 gap-5">
             {dedicatedHostingData.map(
               ({
                 id,
@@ -73,6 +84,51 @@ const DedicatedHosting = () => {
         </div>
       </section>
       {/* ------------------ Dedicated Plans and Pricing End */}
+
+      {/* ------------------ Support Service Start  */}
+      <section className="dark:bg-[#141526]">
+        <div className="max-w-[1400px] mx-auto lg:px-14 px-5 py-[120px]">
+          <Title
+            main={"Compare HostX Dedicated Plans and Support Services"}
+            sub={"LET'S GET TO THE JUICY DEETS"}
+          />
+          {/* -------------- Category */}
+          <ul className="hidden xl:flex justify-between space-x-5 mb-8">
+            {supportServicesCategory.map(({ categoryId, name }) => {
+              return (
+                <li
+                  onClick={() => handleId(categoryId)}
+                  key={categoryId}
+                  className="w-full dark:text-slate-100/80 border dark:border-[#f1f1f50f] border-[#e2e9ee] text-center px-5 py-3 cursor-pointer rounded-md"
+                >
+                  {name}
+                </li>
+              );
+            })}
+          </ul>
+          <div className="mt-[75px]">
+            {/* ------------- find data by category */}
+            <div className="xl:block hidden">
+              <SupportServiceTable id={id} bgColorId={1} />
+            </div>
+            <div className="xl:hidden block">
+              <SupportServiceCard />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* ------------------ Support Service End */}
+      {/* ------------------FAQS Start */}
+      <section className="dark:bg-[#0b0c1b]">
+        <div className="max-w-[1400px] mx-auto lg:px-14 px-5 py-[120px]">
+          <Title
+            main={"Got questions? Well, we've got answers."}
+            sub={"FAQS"}
+          />
+          <Faqs />
+        </div>
+      </section>
+      <Footer />
     </>
   );
 };

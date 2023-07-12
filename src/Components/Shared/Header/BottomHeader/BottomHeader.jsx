@@ -28,7 +28,7 @@ const BottomHeader = () => {
             <Link className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700" to={"/domains"}>Domains</Link>
           </li>
           <li>
-            <Link className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700">About</Link>
+            <Link className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700" to={"/about"}>About</Link>
           </li>
         </ul>
         <div className="flex items-center ml-3">

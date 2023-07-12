@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { BsCheck, BsQuestion } from "react-icons/bs";
+import { CURRENCY_CONTEXT } from "../../Context/CurrencyProvider";
+import { HiOutlineCurrencyBangladeshi, HiOutlineCurrencyDollar } from "react-icons/hi";
 const HostingPlanCard = ({
   title,
   subTitle,
@@ -8,9 +10,11 @@ const HostingPlanCard = ({
   websiteBuilder,
   price,
   subPrice,
-  
+
   image,
 }) => {
+  const { isCurrencyUSD } = useContext(CURRENCY_CONTEXT);
+
   return (
     <div
       className={`px-10 py-[50px] lg:border-r dark:border-[#f1f1f50f] border-[#0000001f] last:border-none  ${
@@ -31,11 +35,29 @@ const HostingPlanCard = ({
       </div>
 
       <div
-        className={`${image ? "pt-8 pb-5 border-t":"border-b pb-5 mb-5"}   dark:border-[#f1f1f50f] border-[#0000001f]`}
+        className={`${
+          image ? "pt-8 pb-5 border-t" : "border-b pb-5 mb-5"
+        }   dark:border-[#f1f1f50f] border-[#0000001f]`}
       >
-        <h1 className="text-3xl dark:text-white font-bold">${price}</h1>
+        <h1 className="text-3xl dark:text-white font-bold">
+          {isCurrencyUSD ? (
+            <p className="flex items-center ">
+              <sup>
+                <HiOutlineCurrencyDollar className=" text-xl" />
+              </sup>
+              {price.usd}
+            </p>
+          ) : (
+            <p className="flex items-center ">
+              <sup>
+                <HiOutlineCurrencyBangladeshi className=" text-xl" />
+              </sup>
+              {price.bdt}
+            </p>
+          )}
+        </h1>
         <small className="text-sm dark:text-[#9193a8] font-medium">
-          Normally ${subPrice} - 12/mo term
+          Normally {isCurrencyUSD ?price.usd: price.bdt} - 12/mo term
         </small>
       </div>
       <Link className="w-full flex justify-center items-center rounded-sm h-[48px] bg-[#0060fe] text-white">
@@ -43,7 +65,9 @@ const HostingPlanCard = ({
       </Link>
       {/* ---------- Top Featur */}
       <div className="mt-14">
-        <h4 className="dark:text-white text-base font-medium mb-5">Top Features</h4>
+        <h4 className="dark:text-white text-base font-medium mb-5">
+          Top Features
+        </h4>
         {topFeature.map(({ feature, name }, index) => {
           return (
             <div key={index} className="flex items-center justify-between">
@@ -63,7 +87,9 @@ const HostingPlanCard = ({
       </div>
       {/* -------------- Web Builder */}
       <div className="mt-14">
-        <h4 className="dark:text-white text-base font-medium mb-5">Website Builder Available</h4>
+        <h4 className="dark:text-white text-base font-medium mb-5">
+          Website Builder Available
+        </h4>
         {websiteBuilder.map(({ feature, name }, index) => {
           return (
             <div key={index} className="flex items-center justify-between">

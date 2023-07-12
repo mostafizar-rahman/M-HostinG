@@ -6,6 +6,8 @@ import Faqs from "../../Components/Shared/Faqs/Faqs";
 import { hostingPlanData } from "../../Utlit/hostingPlansData";
 import HostingPlanCard from "../../Components/HostingPlans/HostingPlanCard";
 import Footer from "../../Components/Shared/Footer/Footer";
+import { BsCheck } from "react-icons/bs";
+import HostingFeature from "../../Components/Shared/HostingFeature/HostingFeature";
 const SharedHosting = () => {
   return (
     <>
@@ -26,13 +28,22 @@ const SharedHosting = () => {
       {/* ------------------Hosting Plan Start */}
       <section className="dark:bg-[#141526]">
         <div className="max-w-[1400px] mx-auto lg:px-14 px-5 py-[120px]">
-        <Title
+          <Title
             main={"Shared server hosting plans and pricing"}
             sub={"WHAT ABOUT OUR PLANS"}
           />
-          <div className="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6  ">
+          <div className="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6  mb-[30px]">
             {hostingPlanData.map(
-              ({ id, title, subTitle, topFeature, price, subPrice, image, websiteBuilder }) => (
+              ({
+                id,
+                title,
+                subTitle,
+                topFeature,
+                price,
+                subPrice,
+                image,
+                websiteBuilder,
+              }) => (
                 <HostingPlanCard
                   key={id}
                   title={title}
@@ -46,6 +57,7 @@ const SharedHosting = () => {
               )
             )}
           </div>
+          <HostingFeature/>
         </div>
       </section>
       {/* ------------------Hosting Plan End */}
@@ -61,7 +73,7 @@ const SharedHosting = () => {
         </div>
       </section>
       {/* ------------------FAQS End */}
-      <Footer/>
+      <Footer />
     </>
   );
 };

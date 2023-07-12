@@ -6,18 +6,19 @@ import VPSHostingServers from "../../Pages/VpsHostingServices/VPSHostingServers"
 import Domains from "../../Pages/Domains/Domains";
 import SharedHosting from "../../Pages/SharedHosting/SharedHosting";
 import DedicatedHosting from "../../Pages/DedicatedHosting/DedicatedHosting";
+import About from "../../Pages/About/About";
 export const router = createBrowserRouter([
   {
-    path: "/",
     path: "/",
     element: <Root />,
     children: [
       { path: "/", element: <Home /> },
-      { path: "/VPS-Hosting-Servers", element: <VPSHostingServers/> },
-      { path: "/Shared-Hosting-Services", element: <SharedHosting/> },
-      { path: "/Dedicated-Hosting-Servers", element: <DedicatedHosting/> },
-      { path: "/domains", element: <Domains/> },
-      { path: "/login", element: <Login /> },
+      { path: "/VPS-Hosting-Servers", element: <VPSHostingServers /> },
+      { path: "/Shared-Hosting-Services", element: <SharedHosting /> },
+      { path: "/Dedicated-Hosting-Servers", element: <DedicatedHosting /> },
+      { path: "/about", element: <About /> },
+      { path: "/domains", element: <Domains /> },
     ],
   },
+  { path: "/login", element: <Login /> },
 ]);

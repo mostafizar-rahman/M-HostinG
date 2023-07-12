@@ -7,7 +7,10 @@ export const hostingPlanData = [
     id: 1,
     title: "Basic Plan",
     subTitle: "When you need just one site.",
-    price: 2,
+    price: {
+      usd:99,
+      bdt:999
+    },
     subPrice: 9.99,
     image: diamond1,
 
@@ -36,7 +39,10 @@ export const hostingPlanData = [
     id: 2,
     title: "Advanced Plan",
     subTitle: "For those running multiple sites.",
-    price: 2,
+    price: {
+      usd:99,
+      bdt:999
+    },
     subPrice: 9.99,
     image: diamond2,
     topFeature: [
@@ -64,7 +70,10 @@ export const hostingPlanData = [
     id: 3,
     title: "Basic Plan",
     subTitle: "When you need just one site.",
-    price: 2,
+    price: {
+      usd:99,
+      bdt:999
+    },
     subPrice: 9.99,
     image: diamond3,
 
@@ -93,7 +102,10 @@ export const hostingPlanData = [
     id: 4,
     title: "Advanced Plan",
     subTitle: "For those running multiple sites.",
-    price: 2,
+    price: {
+      usd:99,
+      bdt:999
+    },
     subPrice: 9.99,
     image: diamond4,
     topFeature: [
