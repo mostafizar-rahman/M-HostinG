@@ -61,18 +61,6 @@ export const testimonialData = [
     pesion: "Full Stack Web Developer",
     comment:
       "I am an expert in web development and design. So far in the last couple of months I couldn't ask for better! Services are on spot, uptime is on spot! I am an expert in web development and design. So far in the last couple of months I couldn't ask for better! Services are on spot, uptime is on spot! I am an expert in web development and design. So far in the last couple of months I couldn't ask for better! Services are on spot, uptime is on spot!",
-  },{
-    image: img2,
-    name: "John Buckland",
-    pesion: "Full Stack Web Developer",
-    comment:
-      "I am an expert in web development and design. So far in the last couple of months I couldn't ask for better! Services are on spot, uptime is on spot! I am an expert in web development and design. So far in the last couple of months I couldn't ask for better! Services are on spot, uptime is on spot! I am an expert in web development and design. So far in the last couple of months I couldn't ask for better! Services are on spot, uptime is on spot!",
-  },{
-    image: img2,
-    name: "John Buckland",
-    pesion: "Full Stack Web Developer",
-    comment:
-      "I am an expert in web development and design. So far in the last couple of months I couldn't ask for better! Services are on spot, uptime is on spot! I am an expert in web development and design. So far in the last couple of months I couldn't ask for better! Services are on spot, uptime is on spot! I am an expert in web development and design. So far in the last couple of months I couldn't ask for better! Services are on spot, uptime is on spot!",
   },
   {
     image: img2,

@@ -7,6 +7,10 @@ import DomainEndPointCard from "../../Components/DomainEndPointCard/DomainEndPoi
 import Title from "../../Components/Title/Title";
 import { DomainGiftsData } from "../../Utlit/DomainGiftsData";
 import DomainGiftsCard from "../../Components/DomainGiftsCard/DomainGiftsCard";
+import FeatureCard from "../../Components/Features/FeatureCard";
+import { featuresData } from "../../Utlit/featuresData";
+import Faqs from "../../Components/Shared/Faqs/Faqs";
+import Footer from "../../Components/Shared/Footer/Footer";
 
 const Domains = () => {
   return (
@@ -92,6 +96,32 @@ const Domains = () => {
           </div>
         </div>
       </section>
+      {/* ------------------ Feature Start */}
+      <section className="dark:bg-[#0b0c1b] ">
+        <div className="max-w-[1400px] mx-auto lg:px-14 px-5 py-[120px]">
+          <Title
+            sub={"MORE THAN JUST A TOOL"}
+            main={" Fancy VPS features you get for totally free."}
+          />
+
+          <div className="mt-[75px] grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-5">
+            {featuresData.map(({ id, title, icon }) => (
+              <FeatureCard key={id} id={id} title={title} icon={icon} />
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* ------------------ Feature End */}
+      <section className="dark:bg-[#0b0c1b] bg-[#ecf4fa]">
+        <div className="max-w-[1400px] mx-auto lg:px-14 px-5 py-[120px]">
+          <Title
+            main={"Got questions? Well, we've got answers."}
+            sub={"FAQS"}
+          />
+          <Faqs />
+        </div>
+      </section>
+      <Footer/>
     </>
   );
 };

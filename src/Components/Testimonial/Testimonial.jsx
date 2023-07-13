@@ -11,11 +11,11 @@ const Testimonial = () => {
           main={"VPS Hosting What Our Customers Have To Say?"}
           sub={"TRUST OUR CUSTOMERS"}
         />
-        <div className="masonry sm:masonry-sm md:masonry-md">
+        <div className="xl:columns-4 md:columns-2 columns-1  space-y-5">
 
           {testimonialData.map(({ comment, image, name, pesion }) => {
             return (
-              <div className=" p-[30px] m-[1%] dark:bg-[#1a1b2e] shadow-lg bg-[#f4f8fb] border border-[#e2e9ee] dark:border-none   ">
+              <div className=" p-[30px] overflow-hidden h-auto dark:bg-[#1a1b2e] shadow-lg bg-[#f4f8fb] border border-[#e2e9ee] dark:border-none   ">
                 <img
                   src={image}
                   alt=""
@@ -29,14 +29,14 @@ const Testimonial = () => {
                     {pesion}
                   </small>
                 </div>
-                {/* <p className="text-[17px] dark:text-slate-100/80  mt-6">
+                <i className="text-[17px] dark:text-[#9193a8] font-playfair inline-block mt-6">
                   " {comment} "
-                </p> */}
+                </i>
               </div>
             );
           })}
         </div>
-        <div className="clear-both"></div>
+        
       </div>
     </section>
   );

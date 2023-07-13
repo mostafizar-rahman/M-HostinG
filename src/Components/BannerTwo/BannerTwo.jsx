@@ -24,7 +24,7 @@ const BannerTwo = ({ herobg1, title, subTitle, content, id }) => {
           <p className="text-[17px] font-medium mb-[10px] text-[#0b0c1b]">
             {subTitle}
           </p>
-          <h1 className="lg:text-5xl md:text-3xl text-2xl font-bold leading-[1.1] mb-[30px] text-[#0b0c1b]">
+          <h1 className="lg:text-5xl md:text-3xl text-2xl font-playfair font-bold leading-[1.1] mb-[30px] text-[#0b0c1b]">
             {title}
           </h1>
           <p className="mb-11 leading-[1.7]">{content}</p>

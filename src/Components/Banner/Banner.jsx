@@ -19,10 +19,10 @@ const Banner = () => {
         }}>
         <div className="lg:flex justify-between  max-w-[1400px] mx-auto md:px-14  px-5  py-20">
           <div className="lg:w-[58%] lg:pr-16 w-full lg:block flex flex-col items-center text-center lg:text-left">
-            <h1 className="md:text-6xl text-[44px] font-extrabold dark:text-white text-black mb-[30px] leading-[1.1]">
+            <h1 className="md:text-[62px] text-[44px] font-poppins font-black dark:text-white text-black mb-[30px] leading-[1.1]">
               VPS HOSTING POWERFUL AND RELIABLE !
             </h1>
-            <p className="dark:text-white text-black mb-[30px] text-sm md:text-base">
+            <p className="dark:text-[#9193a8] text-black mb-[30px] text-sm md:text-base max-w-[600px]">
               Check out the services we offer below. We're determined to provide
               these services at the best quality - customer satisfaction and
               convenience are of the utmost importance for us.

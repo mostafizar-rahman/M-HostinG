@@ -59,7 +59,7 @@ const TopHeader = () => {
       <nav
         className={`block xl:hidden fixed top-0 z-50 ${
           toggleMenu ? "left-0" : "-left-full"
-        } bg-[#1a1b2e] max-w-[390px] w-full h-full py-[60px]  duration-1000`}
+        } dark:bg-[#1a1b2e] bg-white max-w-[390px] w-full h-full py-[60px]  duration-1000`}
       >
         <ul className="">
           <li
@@ -69,7 +69,7 @@ const TopHeader = () => {
             <FaTimes className="dark:text-white text-lg cursor-pointer" />
           </li>
           <li className="px-5 py-[10px]">
-            <Link className="dark:text-slate-100/80 font-medium text-[15px]">
+            <Link className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700">
               Home
             </Link>
           </li>
