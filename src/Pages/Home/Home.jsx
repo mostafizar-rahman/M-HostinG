@@ -13,14 +13,24 @@ import SupportServiceCard from "../../Components/SupportServices/SupportServiceC
 import { supportServicesCategory } from "../../Utlit/supportServiceData";
 import { featuresData } from "../../Utlit/featuresData";
 import FeatureCard from "../../Components/Features/FeatureCard";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   const [id, setId] = useState(1);
   const handleId = (categoryId) => {
     setId(categoryId);
   };
+
   return (
     <>
+      <Helmet>
+        ‍<title>Home-M-HostinG</title>‍
+        <meta
+          name="description"
+          content="the process where a web hosting provider stores and maintains website files and applications on a server to make its customers' websites accessible on the internet"
+        />
+      </Helmet>
+
       <Banner />
       <OperatingSystems />
       {/* ---------------- Hosting Plan */}
@@ -60,8 +70,11 @@ const Home = () => {
       {/* ------------------ Feature Service Start */}
       <section className="dark:bg-[#141526] ">
         <div className="max-w-[1400px] mx-auto lg:px-14 px-5 py-[90px]">
-          <Title sub={"MORE THAN JUST A TOOL"} main={" Fancy VPS features you get for totally free."}/>
-          
+          <Title
+            sub={"MORE THAN JUST A TOOL"}
+            main={" Fancy VPS features you get for totally free."}
+          />
+
           <div className="mt-[75px] grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-5">
             {featuresData.map(({ id, title, icon }) => (
               <FeatureCard key={id} id={id} title={title} icon={icon} />

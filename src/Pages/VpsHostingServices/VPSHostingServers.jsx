@@ -8,6 +8,7 @@ import Title from "../../Components/Title/Title";
 import BannerTwo from "../../Components/BannerTwo/BannerTwo";
 import Faqs from "../../Components/Shared/Faqs/Faqs";
 import HostingFeature from "../../Components/Shared/HostingFeature/HostingFeature";
+import { Helmet } from "react-helmet";
 
 const VPSHostingServers = () => {
   const [managedPlan, setManagedPlan] = useState(true);
@@ -18,6 +19,13 @@ const VPSHostingServers = () => {
 
   return (
     <>
+     <Helmet>
+        ‍<title>VPSHostingServers-M-HostinG</title>‍
+        <meta
+          name="description"
+          content="the process where a web hosting provider stores and maintains website files and applications on a server to make its customers' websites accessible on the internet"
+        />
+      </Helmet>
       {/* --------------------Banner start */}
       <section className=" bg-[#ffe05d] ">
         <BannerTwo

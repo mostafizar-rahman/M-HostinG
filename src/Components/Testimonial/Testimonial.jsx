@@ -13,9 +13,9 @@ const Testimonial = () => {
         />
         <div className="xl:columns-4 md:columns-2 columns-1  space-y-5">
 
-          {testimonialData.map(({ comment, image, name, pesion }) => {
+          {testimonialData.map(({ comment, image, name, pesion }, index) => {
             return (
-              <div className=" p-[30px] overflow-hidden h-auto dark:bg-[#1a1b2e] shadow-lg bg-[#f4f8fb] border border-[#e2e9ee] dark:border-none   ">
+              <div key={index} className=" p-[30px] overflow-hidden h-auto dark:bg-[#1a1b2e] shadow-lg bg-[#f4f8fb] border border-[#e2e9ee] dark:border-none   ">
                 <img
                   src={image}
                   alt=""

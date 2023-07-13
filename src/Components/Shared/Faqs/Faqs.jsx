@@ -54,8 +54,8 @@ const Faqs = () => {
                     </div>
 
                     <div className="px-14 pt-10 ">
-                      {info.map(({ details, name }) => {
-                        return <Accordion title={name}>{details}</Accordion>;
+                      {info.map(({ details, name }, index) => {
+                        return <Accordion key={index} title={name}>{details}</Accordion>;
                       })}
                     </div>
                   </div>

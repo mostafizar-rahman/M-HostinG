@@ -15,7 +15,7 @@ const Accordion = ({ title, children }) => {
   };
 
   return (
-    <div className="border-b dark:border-white/[.1] border-[#e2e9ee]">
+    <div className="border-b dark:border-white/[.1] last:border-none border-[#e2e9ee]">
       <div
         className="flex justify-between items-center py-5  cursor-pointer "
         onClick={toggleAccordion}
@@ -23,9 +23,9 @@ const Accordion = ({ title, children }) => {
         <h3 className="text-base dark:text-white font-medium">{title}</h3>
         <div>
           {isOpen ? (
-            <HiOutlineMinusCircle className="text-white text-2xl" />
+            <HiOutlineMinusCircle className="dark:text-white text-2xl" />
             ) : (
-            <HiOutlinePlusCircle className="text-white text-2xl" />
+            <HiOutlinePlusCircle className="dark:text-white text-2xl" />
           )}
         </div>
       </div>

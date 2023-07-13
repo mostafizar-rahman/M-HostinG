@@ -95,23 +95,31 @@ const SupportServiceTable = ({ id, bgColorId }) => {
 
       {supportServicesData.map(({ categoryId, servicePlan }) => {
         return (
-          <tbody>
+          <tbody key={categoryId}>
             {categoryId === id && (
-              <tr>
-                {servicePlan.map(({ plan, selfManaged, fullyManaged }) => (
-                  <>
+              <>
+                {servicePlan.map(({ plan, selfManaged, fullyManaged }, index) => (
+                  <tr key={index}>
                     <td className="text-right dark:text-slate-100/80 font-semibold text-sm py-5 px-[30px] border dark:border-[#f1f1f50f] border-[#e2e9ee]">
                       {plan}
                     </td>
                     <td className="text-center dark:text-slate-100/80 font-semibold text-sm py-5  px-[30px] border dark:border-[#f1f1f50f] border-[#e2e9ee]">
-                      {selfManaged === true ? <HiCheck className="text-[#0060fe] mx-auto text-2xl"/> : selfManaged}
+                      {selfManaged === true ? (
+                        <HiCheck className="text-[#0060fe] mx-auto text-2xl" />
+                      ) : (
+                        selfManaged
+                      )}
                     </td>
                     <td className="text-center dark:text-slate-100/80 font-semibold text-sm py-5 px-[30px] border dark:border-[#f1f1f50f] border-[#e2e9ee]">
-                      {fullyManaged === true ? <HiCheck className="text-[#0060fe] mx-auto text-2xl"/> : fullyManaged}
+                      {fullyManaged === true ? (
+                        <HiCheck className="text-[#0060fe] mx-auto text-2xl" />
+                      ) : (
+                        fullyManaged
+                      )}
                     </td>
-                  </>
+                  </tr>
                 ))}
-              </tr>
+              </>
             )}
           </tbody>
         );

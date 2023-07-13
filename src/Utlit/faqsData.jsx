@@ -56,8 +56,14 @@ export const faqsData = [
     subTitle: "Dive deeper into HostX's servers features.",
     info: [
       {
-        name: "",
-        details: "",
+        name: "How to Update cPanel in WHM?",
+        details:
+          "A Virtual Private Server is a server divided into fully separate hosting environments. When you have VPS hosting, one of those environments is completely dedicated to you. That means you don't have to share resources (such as RAM or CPU) with other customers and you're less likely to be impacted by their behavior.",
+      },
+      {
+        name: "Updating Legacy Linux Dedicated Hosting Packages",
+        details:
+          "Another great question. A dedicated server is a server that's literally dedicated to you and no one else, which means the world (or in this case, server) is your oyster. Learn more about the benefits of VPS and Dedicated here.",
       },
     ],
   },
@@ -68,8 +74,14 @@ export const faqsData = [
     subTitle: "We take security & privacy seriously.",
     info: [
       {
-        name: "",
-        details: "",
+        name: "Do I Need Domain Privacy Protection? | HostX",
+        details:
+          "A Virtual Private Server is a server divided into fully separate hosting environments. When you have VPS hosting, one of those environments is completely dedicated to you. That means you don't have to share resources (such as RAM or CPU) with other customers and you're less likely to be impacted by their behavior.",
+      },
+      {
+        name: "Launchpad: How to Enable WHMCS Privacy?",
+        details:
+          "Another great question. A dedicated server is a server that's literally dedicated to you and no one else, which means the world (or in this case, server) is your oyster. Learn more about the benefits of VPS and Dedicated here.",
       },
     ],
   },
@@ -80,8 +92,9 @@ export const faqsData = [
     subTitle: "Learn about plans, payments, and more.",
     info: [
       {
-        name: "",
-        details: "",
+        name: "Hosting Price Chart",
+        details:
+          "A Virtual Private Server is a server divided into fully separate hosting environments. When you have VPS hosting, one of those environments is completely dedicated to you. That means you don't have to share resources (such as RAM or CPU) with other customers and you're less likely to be impacted by their behavior.",
       },
     ],
   },

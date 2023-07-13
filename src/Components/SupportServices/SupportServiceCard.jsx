@@ -47,8 +47,8 @@ const SupportServiceCard = () => {
       {supportServicesData.map(({ categoryId, servicePlan }) => {
         return (
           <div key={categoryId}>
-            {servicePlan.map(({ plan, selfManaged, fullyManaged }) => (
-              <div className="flex border border-[#1a1b2e] hover:bg-[#1a1b2e62]">
+            {servicePlan.map(({ plan, selfManaged, fullyManaged }, index) => (
+              <div key={index} className="flex border border-[#1a1b2e] hover:bg-[#1a1b2e62]">
                 <p className="dark:text-[#9193a8] w-1/2 border-r  border-[#1a1b2e] py-5 px-[30px] text-right">{plan}</p>
                 <p className="dark:text-[#9193a8] w-1/2 py-5 px-[30px] text-center">
                   {"selfManaged" === planName && <p>{selfManaged.length?selfManaged:<HiCheck className="text-[#0060fe] mx-auto text-2xl"/>}</p>}

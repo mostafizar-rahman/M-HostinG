@@ -10,6 +10,7 @@ import SupportServiceTable from "../../Components/SupportServices/SupportService
 import SupportServiceCard from "../../Components/SupportServices/SupportServiceCard";
 import Faqs from "../../Components/Shared/Faqs/Faqs";
 import Footer from "../../Components/Shared/Footer/Footer";
+import { Helmet } from "react-helmet";
 
 const DedicatedHosting = () => {
   const [serverPlans, setServerPlans] = useState(true);
@@ -19,6 +20,13 @@ const DedicatedHosting = () => {
   };
   return (
     <>
+    <Helmet>
+        ‍<title>DedicatedHosting-M-HostinG</title>‍
+        <meta
+          name="description"
+          content="the process where a web hosting provider stores and maintains website files and applications on a server to make its customers' websites accessible on the internet"
+        />
+      </Helmet>
       {/* --------------------Banner start */}
       <section className=" bg-[#88E0EF] ">
         <BannerTwo

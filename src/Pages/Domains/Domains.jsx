@@ -11,10 +11,18 @@ import FeatureCard from "../../Components/Features/FeatureCard";
 import { featuresData } from "../../Utlit/featuresData";
 import Faqs from "../../Components/Shared/Faqs/Faqs";
 import Footer from "../../Components/Shared/Footer/Footer";
+import { Helmet } from "react-helmet";
 
 const Domains = () => {
   return (
     <>
+    <Helmet>
+        ‍<title>Domains-M-HostinG</title>‍
+        <meta
+          name="description"
+          content="the process where a web hosting provider stores and maintains website files and applications on a server to make its customers' websites accessible on the internet"
+        />
+      </Helmet>
       {/* -------------------- Banner Start */}
       <section className="dark:bg-[#0b0c1b] bg-[#ecf4fa] relative lg:h-[500px] md:h-[400px] h-[450px]">
         <div className=" lg:px-14 px-5 py-[120px]">

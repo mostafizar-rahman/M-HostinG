@@ -5,6 +5,7 @@ import media1 from "../../assets/images/media-01.jpg";
 import media2 from "../../assets/images/02.jpg";
 import solution from "../../assets/images/solution.png";
 import Footer from "../../Components/Shared/Footer/Footer";
+import { Helmet } from "react-helmet";
 const About = () => {
   const scrollRef = useRef();
   useEffect(() => {
@@ -33,6 +34,13 @@ const About = () => {
 
   return (
     <>
+    <Helmet>
+        ‍<title>About-M-HostinG</title>‍
+        <meta
+          name="description"
+          content="the process where a web hosting provider stores and maintains website files and applications on a server to make its customers' websites accessible on the internet"
+        />
+      </Helmet>
       <section className="dark:bg-[#0b0c1b]  ">
         <div className="max-w-[1400px] mx-auto lg:px-14 px-5 py-[120px] relative">
           <Title

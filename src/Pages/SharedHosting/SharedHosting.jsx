@@ -8,9 +8,17 @@ import HostingPlanCard from "../../Components/HostingPlans/HostingPlanCard";
 import Footer from "../../Components/Shared/Footer/Footer";
 import { BsCheck } from "react-icons/bs";
 import HostingFeature from "../../Components/Shared/HostingFeature/HostingFeature";
+import { Helmet } from "react-helmet";
 const SharedHosting = () => {
   return (
     <>
+    <Helmet>
+        ‍<title>SharedHosting-M-HostinG</title>‍
+        <meta
+          name="description"
+          content="the process where a web hosting provider stores and maintains website files and applications on a server to make its customers' websites accessible on the internet"
+        />
+      </Helmet>
       {/* --------------------Banner start */}
       <section className=" bg-[#FFD369] ">
         <BannerTwo
