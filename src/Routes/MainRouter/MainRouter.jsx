@@ -7,6 +7,8 @@ import Domains from "../../Pages/Domains/Domains";
 import SharedHosting from "../../Pages/SharedHosting/SharedHosting";
 import DedicatedHosting from "../../Pages/DedicatedHosting/DedicatedHosting";
 import About from "../../Pages/About/About";
+import Register from "../../Pages/Register/Register";
+import Contact from "../../Pages/Contact/Contact";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -18,7 +20,9 @@ export const router = createBrowserRouter([
       { path: "/Dedicated-Hosting-Servers", element: <DedicatedHosting /> },
       { path: "/about", element: <About /> },
       { path: "/domains", element: <Domains /> },
+      { path: "/contact", element: <Contact/> },
     ],
   },
   { path: "/login", element: <Login /> },
+  { path: "/register", element: <Register/> },
 ]);

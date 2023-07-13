@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { supportServicesData } from "../../Utlit/supportServiceData";
 import { Link } from "react-router-dom";
+import { HiCheck } from "react-icons/hi";
 
 const SupportServiceCard = () => {
   const [planName, setPlanName] = useState("selfManaged");
@@ -50,8 +51,8 @@ const SupportServiceCard = () => {
               <div className="flex border border-[#1a1b2e] hover:bg-[#1a1b2e62]">
                 <p className="dark:text-[#9193a8] w-1/2 border-r  border-[#1a1b2e] py-5 px-[30px] text-right">{plan}</p>
                 <p className="dark:text-[#9193a8] w-1/2 py-5 px-[30px] text-center">
-                  {"selfManaged" === planName && <p>{selfManaged}</p>}
-                  {"fullyManaged" === planName && <p>{fullyManaged}</p>}
+                  {"selfManaged" === planName && <p>{selfManaged.length?selfManaged:<HiCheck className="text-[#0060fe] mx-auto text-2xl"/>}</p>}
+                  {"fullyManaged" === planName && <p>{fullyManaged.length?fullyManaged:<HiCheck className="text-[#0060fe] mx-auto text-2xl"/>}</p>}
                 </p>
               </div>
             ))}

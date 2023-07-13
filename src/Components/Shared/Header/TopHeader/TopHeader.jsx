@@ -38,7 +38,10 @@ const TopHeader = () => {
           <Link className="w-[130px] h-[42px] rounded-full md:flex justify-center items-center hidden bg-[#0060FE] hover:bg-[#004ac2] duration-700 text-white">
             FREE TRIAL
           </Link>
-          <Link to={"/login"} className="w-[110px] h-[42px] rounded-full md:flex justify-center items-center hidden border border-[#4d4e5b] dark:bg-[#1a1b2e] hover:border-slate-200/70 duration-700 dark:text-white">
+          <Link
+            to={"/login"}
+            className="w-[110px] h-[42px] rounded-full md:flex justify-center items-center hidden border border-[#4d4e5b] dark:bg-[#1a1b2e] hover:border-slate-200/70 duration-700 dark:text-white"
+          >
             Login
           </Link>
           {/* ----------  */}
@@ -46,7 +49,7 @@ const TopHeader = () => {
             <Link>
               <AiOutlineQuestionCircle className="dark:text-white text-3xl " />
             </Link>
-            <Link>
+            <Link to={"/login"}>
               <AiOutlineUser className="dark:text-white text-3xl " />
             </Link>
           </div>
@@ -54,7 +57,7 @@ const TopHeader = () => {
       </div>
       {/* -------------- Nav for mobile or tablet */}
       <nav
-        className={`block xl:hidden fixed top-0 ${
+        className={`block xl:hidden fixed top-0 z-50 ${
           toggleMenu ? "left-0" : "-left-full"
         } bg-[#1a1b2e] max-w-[390px] w-full h-full py-[60px]  duration-1000`}
       >
@@ -71,19 +74,51 @@ const TopHeader = () => {
             </Link>
           </li>
           <li className="px-5 py-[10px]">
-            <Link className="dark:text-slate-100/80 font-medium text-[15px]">
-              About
+            <Link
+              className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700"
+              to={"/VPS-Hosting-Servers"}
+            >
+              VPS Hosting Servers
             </Link>
           </li>
-          <li>
-            <Link className="dark:text-slate-100/80 font-medium text-[15px]"></Link>
-          </li>
-          <li>
-            <Link className="dark:text-slate-100/80 font-medium text-[15px]"></Link>
+          <li className="px-5 py-[10px]">
+            <Link
+              className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700"
+              to={"/Shared-Hosting-Services"}
+            >
+              Shared Hosting Services
+            </Link>
           </li>
           <li className="px-5 py-[10px]">
-            <Link className="dark:text-slate-100/80 font-medium text-[15px]" >
-              Login
+            <Link
+              className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700"
+              to={"/Dedicated-Hosting-Servers"}
+            >
+              Dedicated Hosting Servers
+            </Link>
+          </li>
+          <li className="px-5 py-[10px]">
+            <Link
+              className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700"
+              to={"/domains"}
+            >
+              Domains
+            </Link>
+          </li>
+          <li className="px-5 py-[10px]">
+            <Link
+              className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700"
+              to={"/contact"}
+            >
+              Contact
+            </Link>
+          </li>
+          <li className="px-5 py-[10px]">
+            <Link
+              className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700"
+              to={"/about"}
+            >
+              About
             </Link>
           </li>
         </ul>

@@ -74,7 +74,7 @@ const Home = () => {
                   <li
                     onClick={() => handleId(categoryId)}
                     key={categoryId}
-                    className="w-full dark:text-slate-100/80 border dark:border-[#f1f1f50f] border-[#e2e9ee] text-center px-5 py-3 cursor-pointer rounded-md"
+                    className={`w-full dark:text-slate-100/80 border dark:border-[#f1f1f50f] border-[#e2e9ee] text-center px-5 py-3 cursor-pointer rounded-md ${categoryId === id? "bg-[#0060fe]":"bg-transparent"}`}
                   >
                     {name}
                   </li>

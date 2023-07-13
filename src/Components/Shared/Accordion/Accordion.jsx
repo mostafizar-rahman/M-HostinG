@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import "./accordion.css";
 
 const Accordion = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,18 +13,18 @@ const Accordion = ({ title, children }) => {
       <div
         className="flex justify-between items-center py-5  cursor-pointer "
         onClick={toggleAccordion}
-        
       >
         <h3 className="text-base dark:text-white font-medium">{title}</h3>
-        <span className={`transform ${isOpen ? 'rotate-180' : ''} `}>
-          &#8595;
-        </span>
+        <div className="relative after:absolute after:left-0 after:w-[10px] after:h-[1px] after:bg-white"></div>
       </div>
-      {isOpen && (
-        <div className="pt-[10px] pb-[30px] dark:text-[#9193a8] text-base ">
-          {children}
-        </div>
-      )}
+
+      <div
+        className={` dark:text-[#9193a8] text-base   ${
+          isOpen ? "pt-[10px] pb-[30px] h-full visible transition-all" : "h-0 invisible  transition-all"
+        } `}
+      >
+        {children}
+      </div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FiPhoneCall } from "react-icons/fi";
-import {  AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu } from "react-icons/ai";
 
 const BottomHeader = () => {
   return (
@@ -13,27 +13,67 @@ const BottomHeader = () => {
       <nav className="flex">
         <ul className="xl:flex space-x-3 hidden ">
           <li>
-            <Link className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700" to={'/'}>Home</Link>
+            <Link
+              className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700"
+              to={"/"}
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700" to={"/VPS-Hosting-Servers"}>VPS Hosting Servers</Link>
+            <Link
+              className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700"
+              to={"/VPS-Hosting-Servers"}
+            >
+              VPS Hosting Servers
+            </Link>
           </li>
           <li>
-            <Link className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700" to={"/Shared-Hosting-Services"}>Shared Hosting Services</Link>
+            <Link
+              className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700"
+              to={"/Shared-Hosting-Services"}
+            >
+              Shared Hosting Services
+            </Link>
           </li>
           <li>
-            <Link className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700" to={"/Dedicated-Hosting-Servers"}>Dedicated Hosting Servers</Link>
+            <Link
+              className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700"
+              to={"/Dedicated-Hosting-Servers"}
+            >
+              Dedicated Hosting Servers
+            </Link>
           </li>
           <li>
-            <Link className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700" to={"/domains"}>Domains</Link>
+            <Link
+              className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700"
+              to={"/domains"}
+            >
+              Domains
+            </Link>
           </li>
           <li>
-            <Link className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700" to={"/about"}>About</Link>
+            <Link
+              className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700"
+              to={"/contact"}
+            >
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="dark:text-white opacity-70 font-semibold text-[15px] hover:dark:text-white duration-700"
+              to={"/about"}
+            >
+              About
+            </Link>
           </li>
         </ul>
         <div className="flex items-center ml-3">
-        <AiOutlineMenu className="dark:text-white opacity-70 text-lg" />
-        <p className="dark:text-white opacity-70 font-medium text-[15px]">Products</p>
+          <AiOutlineMenu className="dark:text-white opacity-70 text-lg" />
+          <p className="dark:text-white opacity-70 font-medium text-[15px]">
+            Products
+          </p>
         </div>
       </nav>
     </div>

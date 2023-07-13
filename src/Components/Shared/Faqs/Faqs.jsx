@@ -7,7 +7,6 @@ const Faqs = () => {
   const handleFaqaCategory = (categoryId) => {
     setId(categoryId);
   };
-  console.log(id);
   return (
     <div className="xl:flex xl:space-x-12 mt-[75px]">
       <div className="xl:max-w-sm w-full">

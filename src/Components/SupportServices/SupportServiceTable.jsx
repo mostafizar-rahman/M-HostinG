@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { supportServicesData } from "../../Utlit/supportServiceData";
 import { Link } from "react-router-dom";
 import {
+  HiCheck,
   HiOutlineCurrencyBangladeshi,
   HiOutlineCurrencyDollar,
 } from "react-icons/hi";
@@ -102,11 +103,11 @@ const SupportServiceTable = ({ id, bgColorId }) => {
                     <td className="text-right dark:text-slate-100/80 font-semibold text-sm py-5 px-[30px] border dark:border-[#f1f1f50f] border-[#e2e9ee]">
                       {plan}
                     </td>
-                    <td className="text-center dark:text-slate-100/80 font-semibold text-sm py-5 px-[30px] border dark:border-[#f1f1f50f] border-[#e2e9ee]">
-                      {selfManaged === true ? "ic" : selfManaged}
+                    <td className="text-center dark:text-slate-100/80 font-semibold text-sm py-5  px-[30px] border dark:border-[#f1f1f50f] border-[#e2e9ee]">
+                      {selfManaged === true ? <HiCheck className="text-[#0060fe] mx-auto text-2xl"/> : selfManaged}
                     </td>
                     <td className="text-center dark:text-slate-100/80 font-semibold text-sm py-5 px-[30px] border dark:border-[#f1f1f50f] border-[#e2e9ee]">
-                      {fullyManaged === true ? "ic" : fullyManaged}
+                      {fullyManaged === true ? <HiCheck className="text-[#0060fe] mx-auto text-2xl"/> : fullyManaged}
                     </td>
                   </>
                 ))}

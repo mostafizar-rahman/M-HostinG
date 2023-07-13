@@ -8,23 +8,29 @@ import Footer from "../../Components/Shared/Footer/Footer";
 const About = () => {
   const scrollRef = useRef();
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 100) {
+        scrollRef.current.style.top = '32%'
+        scrollRef.current.style.transition = 'all .5s '
 
-  const handleScroll = () => {
-    // Trigger animation when scroll position meets your criteria
-    // Example: If the user scrolls 80% of the page height
-    const scrollPosition = window.scrollY + window.innerHeight;
-    const pageHeight = document.documentElement.scrollHeight;
-    if (scrollPosition > pageHeight * 0.8) {
-      const element = document.querySelector(".animation");
-      if (element) {
-        element.style.color="red" ;
+        console.log("first")
       }
-      // Call your animation function or set a flag to trigger the animation
-    }
-  };
+      else if(scrollPosition < 150){
+        scrollRef.current.style.top = '25%'
+        scrollRef.current.style.transition = 'all .5s '
+      }
+    };
+
+    // Add event listener to window for scroll events
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); // Empty dependency array to run the effect only once
+
   return (
     <>
       <section className="dark:bg-[#0b0c1b]  ">
@@ -37,7 +43,7 @@ const About = () => {
           />
           <div
             ref={scrollRef}
-            className="animation hidden xl:flex justify-between w-[80%]  absolute left-1/2 -translate-x-1/2 top-[30%]"
+            className="animation hidden xl:flex justify-between w-[80%]  absolute left-1/2 -translate-x-1/2 top-[25%]"
           >
             <div>
               <img src={screenShareIcon} alt="" />

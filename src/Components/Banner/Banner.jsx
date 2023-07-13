@@ -1,21 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import googleIcon from "../../assets/icons/google.svg";
 import githubIcon from "../../assets/icons/github.svg";
 import bell from "../../assets/icons/bell.svg";
 import WeOffer from "../WeOffer/WeOffer";
 import bg from "../../assets/images/bg.png";
+import { MODE_CONTEXT } from "../../Context/ModeProvider";
 const Banner = () => {
+  const {isDrake} = useContext(MODE_CONTEXT)
   return (
     <section className="dark:bg-[#0b0c1b] bg-[#e6f4f8] ">
-      <div
-        // className={`dark:bg-none bg-cover bg-center bg-no-repeat bg-[url(${bg})]`}
-        style={{
-          backgroundImage: `url(${bg})`,
+      <div  style={ {
+        
+          backgroundImage: `url(${isDrake || bg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-        }}
-      >
+          
+        }}>
         <div className="lg:flex justify-between  max-w-[1400px] mx-auto md:px-14 px-5  py-20">
           <div className="lg:w-[58%] lg:pr-16 w-full lg:block flex flex-col items-center text-center lg:text-left">
             <h1 className="md:text-6xl text-[44px] font-extrabold dark:text-white text-black mb-[30px] leading-[1.1]">
