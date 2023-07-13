@@ -63,7 +63,7 @@ const SharedHosting = () => {
       {/* ------------------Hosting Plan End */}
 
       {/* ------------------FAQS Start */}
-      <section className="dark:bg-[#0b0c1b]">
+      <section className="dark:bg-[#0b0c1b] bg-[#ecf4fa]">
         <div className="max-w-[1400px] mx-auto lg:px-14 px-5 py-[120px]">
           <Title
             main={"Got questions? Well, we've got answers."}

@@ -4,7 +4,7 @@ import herobg from "../../assets/images/hero-03.svg";
 import Title from "../../Components/Title/Title";
 import { dedicatedHostingData } from "../../Utlit/dedicatedHostingData";
 import DedicatedHostingCard from "../../Components/DedicatedHostingCard/DedicatedHostingCard";
-import SupportServices from "../../Components/SupportServices/SupportServices";
+
 import { supportServicesCategory } from "../../Utlit/supportServiceData";
 import SupportServiceTable from "../../Components/SupportServices/SupportServiceTable";
 import SupportServiceCard from "../../Components/SupportServices/SupportServiceCard";
@@ -119,7 +119,7 @@ const DedicatedHosting = () => {
       </section>
       {/* ------------------ Support Service End */}
       {/* ------------------FAQS Start */}
-      <section className="dark:bg-[#0b0c1b]">
+      <section className="dark:bg-[#0b0c1b] bg-[#ecf4fa]">
         <div className="max-w-[1400px] mx-auto lg:px-14 px-5 py-[120px]">
           <Title
             main={"Got questions? Well, we've got answers."}

@@ -8,8 +8,8 @@ import openSuse from "../../assets/images/open-suse.png";
 
 const OperatingSystems = () => {
   return (
-    <section className="dark:bg-[#141526] bg-white py-[60px]">
-      <div className="max-w-[1400px] mx-auto md:px-14 px-5 ">
+    <section className="dark:bg-[#141526] bg-white ">
+      <div className="max-w-[1400px] mx-auto md:px-14 px-5  py-[60px]">
         <div className="xl:flex items-center justify-between xl:space-x-6">
           <div className="xl:w-[30%] text-center xl:text-left">
             <h1 className="dark:text-white xl:text-5xl md:text-4xl text-[26px] font-bold mb-4">

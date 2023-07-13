@@ -5,8 +5,8 @@ import {BiLogoFacebook, BiLogoTwitter, BiLogoLinkedin, BiLogoReddit} from "react
 
 const Footer = () => {
   return (
-    <footer className="bg-black py-[60px]">
-      <div className=" px-14 ">
+    <footer className="bg-black ">
+      <div className=" px-14 py-[60px] max-w-[1500px] mx-auto ">
         {/* -------------- Top Footer-----  */}
         <div className="flex justify-between flex-wrap pb-5">
           <ul className="pb-[18px] w-full  md:w-[30%] xl:w-auto ">

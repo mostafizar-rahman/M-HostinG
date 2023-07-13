@@ -9,8 +9,6 @@ const HostingPlanCard = ({
   topFeature,
   websiteBuilder,
   price,
-  subPrice,
-
   image,
 }) => {
   const { isCurrencyUSD } = useContext(CURRENCY_CONTEXT);
@@ -18,8 +16,8 @@ const HostingPlanCard = ({
   return (
     <div
       className={`px-10 py-[50px] lg:border-r dark:border-[#f1f1f50f] border-[#0000001f] last:border-none  ${
-        image ? "dark:bg-[#0b0c1b]" : "dark:bg-[#141526]"
-      }  bg-white dark:rounded-xl lg:dark:rounded-none last:rounded-lg `}
+        image ? "dark:bg-[#0b0c1b] bg-[#ecf4fa]" : "dark:bg-[#141526] bg-white"
+      }   dark:rounded-xl lg:dark:rounded-none last:rounded-lg `}
     >
       <div className={`${image && "pb-3"}`}>
         {image && (

@@ -17,7 +17,7 @@ const Banner = () => {
           backgroundPosition: "center",
           
         }}>
-        <div className="lg:flex justify-between  max-w-[1400px] mx-auto md:px-14 px-5  py-20">
+        <div className="lg:flex justify-between  max-w-[1400px] mx-auto md:px-14  px-5  py-20">
           <div className="lg:w-[58%] lg:pr-16 w-full lg:block flex flex-col items-center text-center lg:text-left">
             <h1 className="md:text-6xl text-[44px] font-extrabold dark:text-white text-black mb-[30px] leading-[1.1]">
               VPS HOSTING POWERFUL AND RELIABLE !

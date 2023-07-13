@@ -9,7 +9,7 @@ const Accordion = ({ title, children }) => {
   };
 
   return (
-    <div className="border-b border-white/[.1] ">
+    <div className="border-b dark:border-white/[.1] border-[#e2e9ee]">
       <div
         className="flex justify-between items-center py-5  cursor-pointer "
         onClick={toggleAccordion}

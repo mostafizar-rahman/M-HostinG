@@ -43,16 +43,16 @@ const VPSHostingServers = () => {
           <div className="flex  justify-center space-x-5">
             <button
               onClick={() => setManagedPlan(true)}
-              className={`dark:text-[#9193a8] text-sm px-7 py-[14px] font-semibold rounded-sm border border-[#ffffff0d] xl:w-[16%] lg:w-[23%] md:w-[33%] w-full  ${
-                managedPlan === true && "bg-[#0060fe] dark:text-white"
+              className={` text-sm px-7 py-[14px] font-semibold rounded-sm border border-[#ffffff0d] xl:w-[16%] lg:w-[23%] md:w-[33%] w-full  ${
+                managedPlan === true ? "bg-[#0060fe] dark:text-white" :" dark:text-[#9193a8] bg-[#ecf4fa] dark:bg-transparent"
               }`}
             >
               Self Managed
             </button>
             <button
               onClick={() => setManagedPlan(false)}
-              className={`dark:text-[#9193a8] text-sm px-7 py-[14px] font-semibold rounded-sm border border-[#ffffff0d] xl:w-[16%] lg:w-[23%] md:w-[33%] w-full  ${
-                managedPlan === false && "bg-[#0060fe] dark:text-white"
+              className={` text-sm px-7 py-[14px] font-semibold rounded-sm border border-[#ffffff0d] xl:w-[16%] lg:w-[23%] md:w-[33%] w-full  ${
+                managedPlan === false ? "bg-[#0060fe] dark:text-white" :" dark:text-[#9193a8] bg-[#ecf4fa] dark:bg-transparent"
               }`}
             >
               Fully Managed
@@ -74,7 +74,7 @@ const VPSHostingServers = () => {
       </section>
       {/* ------------------VPS Hosting plans End */}
       {/* ------------------FAQS Start */}
-      <section className="dark:bg-[#0b0c1b]">
+      <section className="dark:bg-[#0b0c1b] bg-[#ecf4fa]">
         <div className="max-w-[1400px] mx-auto lg:px-14 px-5 py-[120px]">
           <Title
             main={"Got questions? Well, we've got answers."}

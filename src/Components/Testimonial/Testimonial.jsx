@@ -6,7 +6,7 @@ const Testimonial = () => {
   
   return (
     <section className="dark:bg-[#141526]   ">
-      <div className="max-w-[1400px] mx-auto px-14 py-[90px]">
+      <div className="max-w-[1400px] mx-auto lg:px-14 px-5 py-[90px]">
         <Title
           main={"VPS Hosting What Our Customers Have To Say?"}
           sub={"TRUST OUR CUSTOMERS"}

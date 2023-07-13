@@ -19,11 +19,11 @@ const DedicatedHostingCard = ({
   });
 
   return (
-    <div className="bg-[#1a1b2e] mb-[15px] rounded-lg">
+    <div className="dark:bg-[#1a1b2e] bg-white mb-[15px] rounded-lg">
       <div className="flex flex-wrap">
-        <div className="group px-[30px] py-[34px] border-r border-[#0b0c1b] lg:basis-1/3 w-full">
+        <div className="group px-[30px] py-[34px] border-r dark:border-[#0b0c1b] border-[#e2e9ee] lg:basis-1/3 w-full">
           <b className="text-lg font-semibold dark:text-white">{title}</b>
-          <p className="font-medium mb-[15px] text-[#9193a8] block">
+          <p className="font-medium mb-[15px] dark:text-[#9193a8] block">
             {subTitle}
           </p>
           <div className="flex">
@@ -43,10 +43,10 @@ const DedicatedHostingCard = ({
             return (
               <div
                 key={id}
-                className={` lg:basis-1/3 w-full  border-r border-t border-[#0b0c1b]   p-[15px]`}
+                className={` lg:basis-1/3 w-full  border-r border-t dark:border-[#0b0c1b] border-[#e2e9ee]   p-[15px]`}
               >
                 <img src={icon} alt="" className="w-4 invert opacity-[0.6] " />
-                <p className="text-[#9193a8] text-sm font-medium">
+                <p className="dark:text-[#9193a8] text-sm font-medium">
                   <b>{name}</b>
                   <br />
                   {subName}

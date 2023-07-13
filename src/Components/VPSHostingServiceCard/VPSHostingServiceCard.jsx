@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const VPSHostingServiceCard = ({ title, subTitle, hostingInfo }) => {
   return (
-    <div className="dark:bg-[#1a1b2e] rounded-md border dark:border-[#ffffff0d] ">
+    <div className="dark:bg-[#1a1b2e] bg-[#ecf4fa] hover:bg-transparent rounded-md border dark:border-[#ffffff0d] ">
       {/* ---------- Title */}
       <div className="py-5 px-3">
         <div className="flex items-center">
@@ -24,17 +24,17 @@ const VPSHostingServiceCard = ({ title, subTitle, hostingInfo }) => {
         {hostingInfo.map(({ icon, name, subName }, index) => {
           return (
             <div key={index}>
-              <div className="flex border-b border-b-[#ffffff0d] first:border-t first:border-t-[#ffffff0d]">
-                <div className="w-10 inline-flex justify-center items-center border-r border-r-[#ffffff0d]">
+              <div className="flex border-b dark:border-[#ffffff0d] border-[#e2e9ee] first:border-t first:dark:border-[#ffffff0d] first:border-[#e2e9ee]">
+                <div className="w-10 inline-flex justify-center items-center border-r dark:border-[#ffffff0d] border-[#e2e9ee]">
                   <img
                     src={icon}
                     alt="image"
-                    className="w-[17px] invert opacity-[0.6] "
+                    className="w-[17px] dark:invert opacity-[0.6] "
                   />
                 </div>
                 <div className=" ml-4 p-[6px]">
-                  <p className="text-sm font-medium text-[#9193a8]">{name}</p>
-                  <p className="text-sm font-normal text-[#9193a8]">
+                  <p className="text-sm font-medium dark:text-[#9193a8]">{name}</p>
+                  <p className="text-sm font-normal dark:text-[#9193a8]">
                     {subName}
                   </p>
                 </div>

@@ -16,7 +16,7 @@ const Faqs = () => {
               <div
                 onClick={() => handleFaqaCategory(categoryId)}
                 key={categoryId}
-                className={`dark:bg-[#212235] p-[25px] mb-5  rounded-lg flex cursor-pointer w-full `}
+                className={`dark:bg-[#212235] bg-white p-[25px] mb-5  rounded-lg flex cursor-pointer w-full `}
               >
                 <img src={icon} alt="" className="w-9 h-9  object-contain" />
                 <div className="ml-5">
@@ -31,7 +31,7 @@ const Faqs = () => {
         </div>
       </div>
       <div className="w-full">
-        <div className="dark:bg-[#212235] pt-[60px] pb-[50px] px-[50px] rounded-lg">
+        <div className="dark:bg-[#212235] bg-white pt-[60px] pb-[50px] px-[50px] rounded-lg">
           {faqsData.map(({ categoryId, icon, info, subTitle, title }) => {
             return (
               <div key={categoryId}>

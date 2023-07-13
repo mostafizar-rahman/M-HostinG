@@ -4,7 +4,7 @@ import { FiLogOut } from "react-icons/fi";
 import { SlNotebook } from "react-icons/sl";
 const WeOffer = () => {
   return (
-    <div className="max-w-[1400px]  md:px-14 px-5 mx-auto grid lg:grid-cols-4 grid-cols-2 gap-5 pb-20">
+    <div className="max-w-[1400px]  lg:px-14 px-5 mx-auto grid lg:grid-cols-4 grid-cols-2 gap-5 pb-20">
       <div className="dark:bg-[#1A1B2E] bg-white px-[30px] py-9 rounded-md  ">
         <AiOutlineMail className="dark:text-white md:text-5xl text-3xl mx-auto md:mx-0" />
         <h5 className="md:text-xl text-sm font-semibold dark:text-white mt-7 text-center md:text-left">
