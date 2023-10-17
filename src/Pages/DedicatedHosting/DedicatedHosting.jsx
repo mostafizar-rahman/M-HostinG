@@ -20,12 +20,14 @@ const DedicatedHosting = () => {
   };
   return (
     <>
-    <Helmet>
-        ‍<title>DedicatedHosting-M-HostinG</title>‍
+      <Helmet>
+        ‍<title>DedicatedHosting-HostCity</title>‍
         <meta
           name="description"
           content="the process where a web hosting provider stores and maintains website files and applications on a server to make its customers' websites accessible on the internet"
         />
+        <meta name="robots" content="noindex" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Helmet>
       {/* --------------------Banner start */}
       <section className=" bg-[#88E0EF] ">
@@ -107,7 +109,9 @@ const DedicatedHosting = () => {
                 <li
                   onClick={() => handleId(categoryId)}
                   key={categoryId}
-                  className={`w-full dark:text-slate-100/80 border dark:border-[#f1f1f50f] border-[#e2e9ee] text-center px-5 py-3 cursor-pointer rounded-md ${categoryId === id? "bg-[#0060fe]":"bg-transparent"}`}
+                  className={`w-full dark:text-slate-100/80 border dark:border-[#f1f1f50f] border-[#e2e9ee] text-center px-5 py-3 cursor-pointer rounded-md ${
+                    categoryId === id ? "bg-[#0060fe]" : "bg-transparent"
+                  }`}
                 >
                   {name}
                 </li>

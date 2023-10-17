@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Banner from "../../Components/Banner/Banner";
 import OperatingSystems from "../../Components/OperatingSystems/OperatingSystems";
 import Testimonial from "../../Components/Testimonial/Testimonial";
@@ -21,14 +21,41 @@ const Home = () => {
     setId(categoryId);
   };
 
+  useEffect(()=>{
+    const url = 'https://api.godaddy.com/v1/domains/available?domain=example.guru';
+    const apiKey = '3mM44UdB66eZzH_3rfnQnLs3g5HYmYh29VkiN';
+    const apiSecret = 'MyaUsFb1Xhj4BcE1oN6rAT';
+    
+    const headers = {
+      'Content-Type': 'application/json',
+      'Authorization': `sso-key ${apiKey}:${apiSecret}`,
+      
+    };
+    
+    fetch(url, {
+      method: 'GET',
+      headers: headers,       
+      mode: 'no-cors', 
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  }, [])
+
   return (
     <>
       <Helmet>
-        ‍<title>Home-M-HostinG</title>‍
+        ‍<title>Home-HostCity</title>‍
         <meta
           name="description"
           content="the process where a web hosting provider stores and maintains website files and applications on a server to make its customers' websites accessible on the internet"
         />
+        <meta name="robots" content="noindex" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Helmet>
 
       <Banner />

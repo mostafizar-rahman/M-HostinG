@@ -12,14 +12,13 @@ const About = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       if (scrollPosition > 100) {
-        scrollRef.current.style.top = '32%'
-        scrollRef.current.style.transition = 'all .5s '
+        scrollRef.current.style.top = "32%";
+        scrollRef.current.style.transition = "all .5s ";
 
-        console.log("first")
-      }
-      else if(scrollPosition < 150){
-        scrollRef.current.style.top = '25%'
-        scrollRef.current.style.transition = 'all .5s '
+        console.log("first");
+      } else if (scrollPosition < 150) {
+        scrollRef.current.style.top = "25%";
+        scrollRef.current.style.transition = "all .5s ";
       }
     };
 
@@ -34,12 +33,14 @@ const About = () => {
 
   return (
     <>
-    <Helmet>
-        ‍<title>About-M-HostinG</title>‍
+      <Helmet>
+        ‍<title>About-HostCity</title>‍
         <meta
           name="description"
           content="the process where a web hosting provider stores and maintains website files and applications on a server to make its customers' websites accessible on the internet"
         />
+        <meta name="robots" content="noindex" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Helmet>
       <section className="dark:bg-[#0b0c1b]  ">
         <div className="max-w-[1400px] mx-auto lg:px-14 px-5 py-[120px] relative">

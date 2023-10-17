@@ -22,7 +22,7 @@ const TopHeader = () => {
           >
             <AiOutlineMenu className="dark:text-white text-3xl" />
           </button>
-          <Link className="font-bold dark:text-white">M-HostinG</Link>
+          <Link className="font-bold dark:text-white">HostCity</Link>
         </div>
         <div className="flex items-center space-x-5">
           <div className="lg:flex items-center space-x-2 hidden ">

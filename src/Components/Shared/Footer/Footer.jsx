@@ -65,7 +65,7 @@ const Footer = () => {
             </li>
             <li className="mb-3">
               <Link className="text-slate-100/80 text-sm hover:underline">
-                M-HostinG Blog
+                HostCity Blog
               </Link>
             </li>
             <li className="mb-3">
@@ -140,7 +140,7 @@ const Footer = () => {
             </li>
             <li className="mb-3">
               <Link className="text-slate-100/80 text-sm hover:underline">
-                M-Hosting Pro
+                HostCity Pro
               </Link>
             </li>
           </ul>
@@ -241,7 +241,7 @@ const Footer = () => {
         <div className="mt-[60px]">
           <div className="lg:flex items-start justify-between">
             <div className="lg:flex lg:space-x-7 space-x-0">
-              <Link className="text-white text-3xl font-bold">M-HostinG</Link>
+              <Link className="text-white text-3xl font-bold">HostCity</Link>
               <div>
                 <ul className="flex flex-wrap">
                   <li className="border-r pr-3 ">

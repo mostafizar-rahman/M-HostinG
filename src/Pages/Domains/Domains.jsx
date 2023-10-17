@@ -16,19 +16,21 @@ import { Helmet } from "react-helmet";
 const Domains = () => {
   return (
     <>
-    <Helmet>
-        ‍<title>Domains-M-HostinG</title>‍
+      <Helmet>
+        ‍<title>Domains-HostCity</title>‍
         <meta
           name="description"
           content="the process where a web hosting provider stores and maintains website files and applications on a server to make its customers' websites accessible on the internet"
         />
+        <meta name="robots" content="noindex" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Helmet>
       {/* -------------------- Banner Start */}
       <section className="dark:bg-[#0b0c1b] bg-[#ecf4fa] relative lg:h-[500px] md:h-[400px] h-[450px]">
         <div className=" lg:px-14 px-5 py-[120px]">
           <div className="max-w-[1400px] mx-auto  relative">
             <div className="text-center lg:text-left flex flex-col items-center lg:items-start w-full absolute z-10 ">
-              <h1 className="text-[#0b0c1b] dark:text-white lg:text-5xl md:text-3xl text-2xl font-bold">
+              <h1 className="text-[#0b0c1b] dark:text-white lg:text-5xl md:text-3xl text-2xl font-bold font-playfair">
                 Find Perfect Domain <br />
                 Name For Your Website.
               </h1>
@@ -105,7 +107,7 @@ const Domains = () => {
         </div>
       </section>
       {/* ------------------ Feature Start */}
-      <section className="dark:bg-[#0b0c1b] ">
+      <section className="dark:bg-[#141526] ">
         <div className="max-w-[1400px] mx-auto lg:px-14 px-5 py-[120px]">
           <Title
             sub={"MORE THAN JUST A TOOL"}
@@ -129,7 +131,7 @@ const Domains = () => {
           <Faqs />
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 };

@@ -20,11 +20,13 @@ const VPSHostingServers = () => {
   return (
     <>
      <Helmet>
-        ‍<title>VPSHostingServers-M-HostinG</title>‍
+        ‍<title>VPSHostingServers-HostCity</title>‍
         <meta
           name="description"
           content="the process where a web hosting provider stores and maintains website files and applications on a server to make its customers' websites accessible on the internet"
         />
+        <meta name="robots" content="noindex" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Helmet>
       {/* --------------------Banner start */}
       <section className=" bg-[#ffe05d] ">

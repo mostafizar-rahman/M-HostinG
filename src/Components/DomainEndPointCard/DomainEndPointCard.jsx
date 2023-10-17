@@ -20,7 +20,7 @@ const DomainEndPointCard = ({ image, price, endPoint, info }) => {
         <img src={image} alt="" className="w-full h-[270px]" />
         <div className="absolute top-0 bg-[#0e0e0e] bg-opacity-25 h-full py-[30px] px-5 rounded-xl">
           <div>
-            <h3 className="dark:text-white text-3xl font-bold mb-[15px]">
+            <h3 className="dark:text-white lg:text-4xl text-3xl font-bold font-poppins mb-[15px]">
               <span className="text-[#FFB830] text-4xl">.</span>
               {endPoint}
             </h3>
